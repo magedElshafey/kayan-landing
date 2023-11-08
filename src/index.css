@@ -1,13 +1,92 @@
-body {
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body {
+  overflow-x: hidden;
+  text-transform: capitalize;
+}
+.heroImg {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/whatsapp_image_2023-10-31_at_3.19.15_pm_720.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.input-container {
+  position: relative;
+  width: 90%;
+  margin: 10px;
+}
+@media screen and (max-width: 767px) {
+  .input-container {
+    width: 100%;
+  }
+}
+.top-label {
+  position: absolute;
+  top: -14px;
+  right: 5px;
+  background-color: white;
+  padding: 0 5px;
+  color: #555;
+  font-size: 14px;
+  z-index: 1;
+}
+.label {
+  color: #555;
+}
+.top-label-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.top-label-input:focus {
+  outline: none;
+}
+.arrow {
+  font-size: 13px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  color: #666;
+  cursor: pointer;
+  pointer-events: all;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.btn {
+  width: 300px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1c375 !important;
+  font-weight: bolder !important;
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+}
+.form {
+  overflow: hidden;
+}
+.phone {
+  border: none;
+  background-color: transparent;
+  display: inline-block;
+  margin-right: 25px !important;
+}
+.phone:focus {
+  outline: none;
+}
+select {
 }
